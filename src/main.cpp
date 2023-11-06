@@ -111,7 +111,7 @@ int main(){
 
     //load image
     int width, height, nChannels;
-    unsigned char* data = stbi_load("src/assets/image1.jpg", &width, &height, &nChannels, 0);
+    unsigned char* data = stbi_load("src/assets/obama10.jpg", &width, &height, &nChannels, 0);
 
     if(data){
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
